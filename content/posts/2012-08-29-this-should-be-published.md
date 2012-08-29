@@ -1,11 +1,10 @@
 ---
-title: "Something"
-created_at: 2012-08-28 22:52:49 -0700
+title: "this should be published"
+created_at: 2012-08-29 15:01:00 -0700
 kind: article
 categories:
     - Linux
-    - Archlinux
-    - Terminal
+    - Console
 published: true
 ---
 

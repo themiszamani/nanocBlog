@@ -1,7 +1,8 @@
 <% render 'default' do %>
   <div class='post'>
     <h1><%= item[:title] %></h1>
-    <aside>Posted at: <%= get_pretty_date(item) %></aside>
+    <aside>Posted at: <%= get_pretty_date(item) %>
+    <br />Categories: <%= link_categories(@item[:categories]).join(', ') %></aside>
     <article>
       <%= yield %>
     </article>

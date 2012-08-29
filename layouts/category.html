@@ -1,0 +1,14 @@
+<% render 'default' do %>
+<h1 class="top"><%= @item[:h1] %></h1>
+
+<% if @item[:posts].length > 0 %>
+  <ul class="archive">
+    <% @item[:posts].sort_by{|p| p[:created_at]}.reverse.each do |p| %>
+    <li>
+      <span><%= p.attributes[:created_at].strftime("%F") %> &middot; </span>
+      <a href="<%= relative_path_to(p) %>"><%= p.attributes[:title] %></a>
+    </li>
+    <% end %>
+  </ul>
+<% end %>
+<% end %>

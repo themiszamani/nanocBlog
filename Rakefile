@@ -1,5 +1,16 @@
+require 'nanoc/tasks'
 require 'stringex'
-desc "Create a new post"
+
+task :default => [:compile]
+
+task :compile do
+  system('nanoc3', 'compile')
+end
+
+task :optimize_pngs do
+  system('find', 'output', '-name', '*.png', '-exec', 'optipng', '-o7', '{}', ';')
+end
+
 task :new_post, :title do |t, args|
   mkdir_p './content/posts'
   args.with_defaults(:title => 'New Post')
