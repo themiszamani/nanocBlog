@@ -1,0 +1,18 @@
+# Vim session files
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+~*
+
+# Local backup files
+*.bkp
+
+# logs
+*.log
+
+# Output directory
+output/
+
+# Temporary directory
+tmp/

@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Andika);
+.content {
+  width: 960px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top: none;
+  margin: 0 auto;
+  padding: 60px 20px 0 60px;
+  font-family: Andika;
+  font-size: 18px;
+}
+.post aside {
+  color: #888;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+.post article {
+  margin: 10px 0 60px 0;
+}
