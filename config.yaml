@@ -75,3 +75,12 @@ watcher:
   # When to send notifications (using Growl or notify-send).
   notify_on_compilation_success: false
   notify_on_compilation_failure: true
+
+title: "nerditya"
+subtitle: ""
+base_url: "http://nerditya.com/"
+author_name: "Aditya Shevade"
+author_uri: "http://adityashevade.com/"
+
+# Pagination size
+page_size: 2

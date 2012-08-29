@@ -18,6 +18,18 @@ preprocess do
   items.delete_if { |item| item[:published] == false }
 
   create_category_pages
+
+  def paginate(num)
+    l = sorted_articles
+    npages = (l.length - 1) / num
+
+    for i in 1..(npages)
+      create_old_page "/page/", i, npages, num
+    end
+  end
+
+  paginate @config[:page_size]
+
 end
 
 # -----------------
