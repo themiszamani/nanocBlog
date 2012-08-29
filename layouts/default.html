@@ -20,8 +20,24 @@
         </div>
       </div>
     </div>
+
+   <div class="container-fluid">
+     <div class="row-fluid">
+       <div class="span3">
+         <div class="well sidebar-nav">
+           <ul class="nav nav-list">
+             <li class="nav-header">Categories</li>
+             <li><%= link_categories(all_categories).join('') %></li>
+           </ul>
+         </div><!--/.well -->
+       </div><!--/span-->
+       <div class="span9 well">
+
     <section class='content'>
       <%= yield %>
     </section>
+  </div><!--/span-->
+  </div><!--/row-->
+  </div><!--/containter-->
   </body>
 </html>
