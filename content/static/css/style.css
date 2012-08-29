@@ -1,22 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Andika);
+
+body {
+  font-family: Andika;
+}
+
 .content {
   margin: 0 auto;
   padding: 20px 20px 0 20px;
-  font-family: Andika;
   font-size: 18px;
 }
+
 .post aside {
   color: #888;
   padding-bottom: 8px;
   border-bottom: 1px solid #aaa;
 }
+
 .post article {
-  margin: 10px 0 60px 0;
+  margin: 20px 0 20px 0;
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  font-family: Andika;
   max-width: 960px;
 }
