@@ -15,7 +15,7 @@ Till the time I was using it for browsing, watching movies, listenin to music an
 
 That is when I started to look at the options I had. Finally after contemplating all of them, I have built a development environment. Especially for coding.
 
-![Desktop Multiplexed](/images/posts/2012-08-28-desktop.png "Desktop Multiplexed")
+[![Desktop Multiplexed](/images/posts/2012-08-28-desktop-thumbnail.png "Desktop Multiplexed")](/images/posts/2012-08-28-desktop.png)
 
 ##The Setup
 
