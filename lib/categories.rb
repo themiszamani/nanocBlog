@@ -16,7 +16,7 @@ module Categories
     cats = []
     posts.each do |article|
       next if article[:categories].nil?
-      cats << article[:categories]
+      cats << article[:categories].map{|x| x.downcase}
     end
     cats.flatten.compact.uniq
   end
@@ -29,7 +29,8 @@ module Categories
     if article[:categories].nil?
       false
     else
-      article[:categories].include?(category)
+      #article[:categories].include?(category)
+      article[:categories].any?{ |s| s.casecmp(category)==0 }
     end
   end
 
@@ -57,7 +58,7 @@ module Categories
   def articles_by_category(posts=articles)
     cats = []
     all_categories.each do |cat|
-      cats << [cat.downcase, articles_with_category(cat)]
+      cats << [cat, articles_with_category(cat)]
     end
     cats
   end

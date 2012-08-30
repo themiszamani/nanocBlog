@@ -3,7 +3,7 @@ title: "Trial misc Category"
 created_at: 2012-08-29 20:08:11 -0700
 kind: article
 categories:
-    - misc
+    - MiSc
 published: true
 ---
 
