@@ -48,12 +48,8 @@ end
 # posts {{{
 # -----------------
 compile '/posts/*' do
-  if item[:published] then
-    filter :kramdown
-    layout 'posts'
-  else
-    item.delete
-  end
+  filter :kramdown
+  layout 'posts'
 end
 
 route '/posts/*' do
