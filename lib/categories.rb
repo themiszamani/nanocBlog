@@ -18,7 +18,7 @@ module Categories
       next if article[:categories].nil?
       cats << article[:categories].map{|x| x.downcase}
     end
-    cats.flatten.compact.uniq
+    cats.flatten.compact.uniq.sort
   end
   memoize :all_categories
 
@@ -71,7 +71,7 @@ module Categories
   #
   # This is ugly, but better here then in the middle of a layout.
   def link_categories(cats)
-    cats.map do |cat|
+    cats.sort.map do |cat|
       ['<a href="/categories/', cat, '.html">', cat, '</a>'].join
     end
   end
