@@ -27,7 +27,7 @@
          <div class="well sidebar-nav">
            <ul class="nav nav-list">
              <li class="nav-header">Categories</li>
-             <li><%= link_categories(all_categories).join('') %></li>
+             <li><%= link_categories(all_categories.map{|x| x.downcase}).join('') %></li>
            </ul>
          </div><!--/.well -->
        </div><!--/span-->

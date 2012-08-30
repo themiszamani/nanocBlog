@@ -57,7 +57,7 @@ module Categories
   def articles_by_category(posts=articles)
     cats = []
     all_categories.each do |cat|
-      cats << [cat, articles_with_category(cat)]
+      cats << [cat.downcase, articles_with_category(cat)]
     end
     cats
   end

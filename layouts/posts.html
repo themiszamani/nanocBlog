@@ -2,7 +2,7 @@
   <div class='post'>
     <h1><%= item[:title] %></h1>
     <aside>Posted at: <%= get_pretty_date(item) %>
-    <br />Categories: <%= link_categories(@item[:categories]).join(', ') %></aside>
+    <br />Categories: <%= link_categories(@item[:categories].map{|x| x.downcase}).join(', ') %></aside>
     <article>
       <%= yield %>
     </article>
