@@ -72,7 +72,7 @@ module Categories
   # This is ugly, but better here then in the middle of a layout.
   def link_categories(cats)
     cats.sort.map do |cat|
-      ['<a href="/categories/', cat, '.html">', cat, '</a>'].join
+      ['<a href="/categories/', cat, '.html">', cat.capitalize, '</a>'].join
     end
   end
 

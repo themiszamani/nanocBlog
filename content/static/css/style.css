@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Andika);
 
 body {
-  font-family: Andika;
 }
 
 .content {
   margin: 0 auto;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 0px 20px;
   font-size: 18px;
+  font-family: Andika;
 }
 
 .post aside {
@@ -21,7 +21,21 @@ body {
 }
 
 .container-fluid {
+  padding-top: 90px;
   margin-right: auto;
   margin-left: auto;
   max-width: 960px;
+}
+
+.nav-header {
+  font-size: 16px;
+  color: black;
+}
+
+ul li {
+  font-size: 16px;
+}
+
+.sidebar-nav {
+    padding: 5px;
 }
