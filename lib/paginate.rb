@@ -24,11 +24,13 @@ def create_old_page(base, idx, last_idx, num)
           <h1><%= link_to a[:title], a.path %></h1>
           <%= a.compiled_content %>
         <% end %>
-        <hr>
-        <a href="<%= @item[:prev_idx] %>">&laquo Newer</a>
+        <hr><div class="row">
+        <div class="span2 offset1"><a href="<%= @item[:prev_idx] %>">&laquo Newer</a></div>
+        <div class="span3 offset2"><a href="#">- Blog Archives -</a></div>
         <% if not @item[:next_idx].nil? %>
-          <a class="pull-right" href="<%= @item[:next_idx] %>">Older &raquo</a>
+          <div class="span2 offset2"><a href="<%= @item[:next_idx] %>">Older &raquo</a></div>
         <% end %>
+        </div>
     }
     create_item base + "#{idx + 1}", meta, contents
 end
