@@ -1,0 +1,9 @@
+---
+title: Archives
+---
+<% sorted_articles.each do |article| %>
+  <h3>
+    <span><%= article.attributes[:created_at].strftime("%F") %> &middot; </span>
+    <a href="<%= relative_path_to(article) %>"><%= article.attributes[:title] %></a>
+  </h3>
+<% end %>

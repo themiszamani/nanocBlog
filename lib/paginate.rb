@@ -22,11 +22,11 @@ def create_old_page(base, idx, last_idx, num)
         <% pages = sorted_articles.slice(@item[:old_idx] * #{num}, #{num}) %>
         <% pages.each do |a| %>
           <h1><%= link_to a[:title], a.path %></h1>
-          <%= a.compiled_content %>
+          <%= get_post_start(a) %>
         <% end %>
         <hr><div class="row">
         <div class="span2 offset1"><a href="<%= @item[:prev_idx] %>">&laquo Newer</a></div>
-        <div class="span3 offset2"><a href="#">- Blog Archives -</a></div>
+        <div class="span3 offset2"><a href="/archives/">- Blog Archives -</a></div>
         <% if not @item[:next_idx].nil? %>
           <div class="span2 offset2"><a href="<%= @item[:next_idx] %>">Older &raquo</a></div>
         <% end %>
