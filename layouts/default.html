@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title><%= @config[:title] %> - <%= @item[:title] %></title>
-    <link rel="stylesheet" type="text/css"
-      href="http://bootswatch.com/cerulean/bootstrap.css"
-      media="screen">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "f3250c37-cdcf-46ee-8574-28ea54585f06"}); </script>
   </head>
   <body>
     <div class='navbar navbar-fixed-top'>
@@ -21,31 +23,30 @@
       </div>
     </div>
 
-   <div class="container-fluid">
-     <div class="row-fluid">
-       <div class="span3">
-         <div class="well sidebar-nav">
-           <ul class="nav nav-list">
-             <li class="nav-header">Social</li>
-             <li><a href="http://twitter.com/adibis/">Twitter</a></li>
-             <li><a href="http://github.com/adibis/">Github</a></li>
-             <li class="nav-header">Categories</li>
-             <li><%= link_categories(all_categories.map{|x| x.downcase}).join('') %></li>
-             <li class="nav-header">Recent Posts</li>
-               <% pages = sorted_articles[0..3] %>
-               <% pages.each do |post| %>
-             <li><%= link_to post[:title], post.path %><li>
-               <% end %>
-           </ul>
-         </div><!--/.well -->
-       </div><!--/span-->
-       <div class="span9 well">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 sidebar">
+          <img src="/static/img/arch.png" />
+          <h2>nerditya</h2>
+          <h4>Aditya Shevade</h4>
+          <p>A Linux fanatic, a nature photographer, a music fiend and coffee lover...</p>
+          <a href="http://twitter.com/adibis"><img src="/static/img/twitter.png" width="45px" /></a>&nbsp;
+          <a href="http://plus.google.com/105245518016104391221/about"><img src="/static/img/gplus.png" width="45px" /></a>&nbsp;
+          <a href="http://facebook.com/adibis"><img src="/static/img/facebook.png" width="45px" /></a>&nbsp;
+          <a href="http://github.com/adibis"><img src="/static/img/github.png" width="45px" /></a>
+        </div><!--/span-->
 
-    <section class='content'>
-      <%= yield %>
-    </section>
-  </div><!--/span-->
-  </div><!--/row-->
-  </div><!--/containter-->
+        <div class="span9 offset3">
+          <section class='content'>
+            <%= yield %>
+          </section>
+        </div><!--/span-->
+
+      <footer>
+        Written in <a href="http://www.vim.org/">gVim</a>, managed via <a href="http://git-scm.com/">Git</a>. Powered by <a href="http://nanoc.stoneship.org/">Nanoc</a> and <a href="http://github.com/adibis/adibis.github.com/">GitHub</a>.
+      </footer>
+
+      </div><!--/row-->
+    </div><!--/containter-->
   </body>
 </html>

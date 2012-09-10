@@ -2,7 +2,18 @@
   <div class='post'>
     <h1><%= item[:title] %></h1>
     <aside>Posted at: <%= get_pretty_date(item) %>
-    <br />Categories: <%= link_categories(@item[:categories].map{|x| x.downcase}).join(', ') %></aside>
+    <br />Categories: <%= link_categories(@item[:categories].map{|x| x.downcase}).join(', ') %>
+    <br /><br />
+    <span class='st_reddit_large' displayText='Reddit'></span>
+    <span class='st_twitter_large' displayText='Tweet' st_via='adibis'></span>
+    <span class='st_googleplus_large' displayText='Google +'></span>
+    <span class='st_facebook_large' displayText='Facebook'></span>
+    <span class='st_stumbleupon_large' displayText='StumbleUpon'></span>
+    <span class='st_pinterest_large' displayText='Pinterest'></span>
+    <span class='st_delicious_large' displayText='Delicious'></span>
+    <span class='st_digg_large' displayText='Digg'></span>
+    <span class='st_slashdot_large' displayText='Slashdot'></span>
+    </aside>
     <article>
       <%= yield %>
     </article>

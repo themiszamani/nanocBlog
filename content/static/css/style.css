@@ -1,18 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Andika);
-
-body {
+html, body {
+  height: 100%;
 }
 
 .content {
   margin: 0 auto;
   padding: 20px 20px 0px 20px;
-  font-size: 18px;
-  font-family: Andika;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  height: 100%;
 }
 
 .post aside {
   color: #888;
   padding-bottom: 8px;
+  line-height: 20px;
   border-bottom: 1px solid #aaa;
 }
 
@@ -21,21 +23,36 @@ body {
 }
 
 .container-fluid {
-  padding-top: 90px;
+  padding-top: 60px;
   margin-right: auto;
   margin-left: auto;
   max-width: 960px;
+  padding-bottom: 100px;
+  position: relative;
+  height: auto;
+  min-height: 100%;
 }
 
-.nav-header {
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: 5px solid #08c;
   font-size: 16px;
-  color: black;
+  width: 100%;
+  max-width: 960px;
+  clear: both;
+  position: absolute;
+  bottom: 0;
 }
 
-ul li {
-  font-size: 16px;
-}
-
-.sidebar-nav {
-    padding: 5px;
+.sidebar {
+  padding-top: 30px;
+  color: #333;
+  font-size: 14px;
+  position: fixed;
+  max-width: 240px;
 }
