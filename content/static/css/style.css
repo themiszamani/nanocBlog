@@ -56,3 +56,15 @@ footer {
   position: fixed;
   max-width: 240px;
 }
+
+@media (max-width: 767px) {
+
+  .sidebar {
+    padding-top: 30px;
+    color: #333;
+    font-size: 14px;
+    position: fixed;
+    max-width: 240px;
+  }
+
+}

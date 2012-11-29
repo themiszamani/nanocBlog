@@ -74,7 +74,9 @@ end
 # -----------------
 
 compile '/posts/*' do
-  filter :kramdown
+  #filter :kramdown
+  filter :rdiscount, :extensions => %w( strict smart )
+  filter :colorize_syntax, :default_colorizer => :pygmentize
   layout 'posts'
 end
 
