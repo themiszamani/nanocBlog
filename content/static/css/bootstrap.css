@@ -8,10 +8,11 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
-@import url(http://fonts.googleapis.com/css?family=Amaranth:400,700);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,500,700);
 @import url(http://fonts.googleapis.com/css?family=Courgette);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
 
 article,
 aside,
@@ -164,9 +165,9 @@ textarea {
 
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Bitter', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #333333;
   background: #ffffff;
 }
@@ -178,7 +179,7 @@ a {
 
 a:hover {
   color: #005580;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .img-rounded {
@@ -638,8 +639,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: 'Amaranth', sans-serif;
-  font-weight: bold;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   line-height: 1;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -857,7 +857,7 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Droid Sans Mono', sans-serif;
   font-size: 16px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -880,7 +880,7 @@ pre {
   line-height: 20px;
   word-break: break-all;
   word-wrap: break-word;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Bitter', sans-serif;
   white-space: pre;
   white-space: pre-wrap;
   background-color: #eec;
@@ -3434,7 +3434,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link:hover {
   color: #005580;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
 }
 

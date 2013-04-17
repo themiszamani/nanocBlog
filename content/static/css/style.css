@@ -6,7 +6,7 @@ html, body {
   margin: 0 auto;
   padding: 20px 20px 0px 20px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   text-align: left;
   height: 100%;
 }
@@ -57,7 +57,7 @@ footer {
   max-width: 240px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 720px) {
 
   .sidebar {
     padding-top: 30px;
