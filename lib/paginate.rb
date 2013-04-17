@@ -1,3 +1,5 @@
+# Used for pagination of the blog. The maximum articles per page is defined in
+# config.yaml page. This function generates the pages.
 def create_old_page(base, idx, last_idx, num)
     first = idx * num + 1
     last = (idx + 1) * num
