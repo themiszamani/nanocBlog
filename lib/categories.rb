@@ -99,6 +99,12 @@ module Categories
       )
     end
   end
+
+  def category_link_with_count(category, count)
+		permalink = category.downcase.gsub /\s/, '-'
+		%{<a href="/categories/#{permalink}.html">#{category.capitalize}</a> (#{count})}
+  end
+
 end
 
 include Categories

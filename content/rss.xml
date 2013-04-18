@@ -1,0 +1,6 @@
+---
+permalink: 'rss'
+type: 'feed'
+title: 'nerditya - Articles (RSS Feed)'
+---
+<%= rss_feed %>

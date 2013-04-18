@@ -20,6 +20,7 @@ preprocess do
 
   # generate a page for each category listing all posts under the category
   create_category_pages
+  create_archive_pages
 
   # the variable page_size is defined in config.yaml, this is the maximum
   # number of posts displayed per page
@@ -105,11 +106,34 @@ route '/categories/*/' do
   item.identifier.chop + '.html'
 end
 
+compile '/archives/*/' do
+  filter :kramdown
+  layout 'category'
+end
+
+route '/archives/*/' do
+  item.identifier.chop + '.html'
+end
+
 # -------------------------------------
 # Archives
 # -------------------------------------
 route '/archives/' do
   '/archives/index.html'
+end
+
+route '/categories/' do
+  '/categories/index.html'
+end
+
+# -------------------------------------
+# RSS Feeds
+# -------------------------------------
+compile '/rss/' do
+	filter :erb unless rep.binary? # e.g. rss.png image
+end
+route '/rss/' do
+	item.identifier.chop + '.xml'
 end
 
 # -------------------------------------

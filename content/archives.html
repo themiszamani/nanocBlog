@@ -1,9 +1,10 @@
 ---
 title: Archives
 ---
-<% sorted_articles.each do |article| %>
-  <h3>
-    <span><%= article.attributes[:created_at].strftime("%F") %> &middot; </span>
-    <a href="<%= relative_path_to(article) %>"><%= article.attributes[:title] %></a>
-  </h3>
-<% end %>
+<% c = 0
+articles_by_month.each do |m|
+  c = c+1 %>
+  <%= %{<div class="row">} if c%3 == 1 %>
+    <div class="span3"><%= month_link_with_count(m[0], m[1].length) %></div>
+    <%= "</div>" if c%3 == 0 %>
+<% end %></div>

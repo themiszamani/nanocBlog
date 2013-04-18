@@ -1,0 +1,10 @@
+---
+title: Categories
+---
+<% c = 0
+articles_by_category.each do |m|
+  c = c+1 %>
+  <%= %{<div class="row">} if c%3 == 1 %>
+    <div class="span3"><%= category_link_with_count(m[0], m[1].length) %></div>
+    <%= "</div>" if c%3 == 0 %>
+<% end %></div>
