@@ -137,6 +137,21 @@ route '/rss/' do
 end
 
 # -------------------------------------
+# Files, Favicons and robots.txt file.
+# -------------------------------------
+
+route /\/(files|favicon|robots)\// do
+	item.identifier.chop + ".#{item[:extension]}"
+end
+
+# -------------------------------------
+# Custom error pages for github.
+# -------------------------------------
+route /\/(403|404|500)\// do
+	item.identifier.chop + ".#{item[:extension]}"
+end
+
+# -------------------------------------
 # Regex matching for everything else
 # -------------------------------------
 compile '*' do
