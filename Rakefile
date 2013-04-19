@@ -1,5 +1,9 @@
-require 'nanoc/tasks'
-require 'stringex'
+begin
+  require 'nanoc3/tasks'
+rescue LoadError
+  require 'rubygems'
+  require 'nanoc3/tasks'
+end
 
 task :default => [:compile]
 
@@ -11,6 +15,8 @@ task :optimize_pngs do
   system('find', 'output', '-name', '*.png', '-exec', 'optipng', '-o7', '{}', ';')
 end
 
+require 'stringex'
+desc "Create a new post"
 task :new_post, :title do |t, args|
   mkdir_p './content/posts'
   args.with_defaults(:title => 'New Post')
