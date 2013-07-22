@@ -44,8 +44,8 @@ You should see the LED light up. Though it works, it's not the most attractive w
         GPIO.output(inPin,GPIO.LOW)
         time.sleep(1)
         return
-    # To use Raspberry-Pi board pin numbers
-    GPIO.setmode(GPIO.BOARD)
+    # To use Raspberry-Pi GPIO numbers
+    GPIO.setmode(GPIO.BCM)
     # Set the LED pin as output
     GPIO.setup(LED_PIN, GPIO.OUT)
     # Blink the LED forever
