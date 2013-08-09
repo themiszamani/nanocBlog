@@ -14,7 +14,7 @@ Till the time I was using it for browsing, watching movies, listenin to music an
 
 That is when I started to look at the options I had. Finally after contemplating all of them, I have built a development environment. Especially for coding.
 
-[![](/images/posts/2012-02-05-desktop-thumbnail.png)](/images/posts/2012-02-05-desktop.png)
+<a href="/images/posts/2012-02-05-desktop.png" class="lightbox" ><img src="/images/posts/2012-02-05-desktop-thumbnail.png" alt=""></a>
 
 ##The Setup
 

@@ -18,7 +18,7 @@ The first thing you will need - if you haven't already - is to install an operat
 
 If you look at the Pi, there's a <X> pin header on the board that has some peripheral connections as well as a few GPIOs. GPIOs are general purpose input output pins. These are the pins where you can 'drive' a 1 or a 0 and control hardware. We would connect one end of the LED to a GPIO and the other to either +3.3V or GND.
 
-[![](/images/posts/2013-04-18-GPIO-header-thumbnail.png)](/images/posts/2013-04-18-GPIO-header.png)
+<a href="/images/posts/2013-04-18-GPIO-header.png" class="lightbox" ><img src="/images/posts/2013-04-18-GPIO-header-thumbnail.png" alt=""></a>
 
 Hook up the anode of the LED (the longer pin) to GPIO 17. Connect the shorter end to GND. Now, open up a terminal on the Pi. If you don't have a monitor and keyboard connected to the Pi and don't know know how to log in to the Pi using SSH please search how to do that. Then, try out the following commands.
 

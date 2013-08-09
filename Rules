@@ -50,6 +50,18 @@ end
 # static css }}}
 
 # -----------------
+# static js {{{
+# -----------------
+compile '/static/js/*' do
+  # don’t filter or layout
+end
+
+route '/static/js/*' do
+  item.identifier.chop + '.' + item[:extension]
+end
+# static css }}}
+
+# -----------------
 # Blog post imagery {{{
 # -----------------
 compile '/images/posts/*', :rep => :thumbnail do

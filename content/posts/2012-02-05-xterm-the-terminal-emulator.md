@@ -14,7 +14,7 @@ For the minimalist setup that I currently am using - this seemed like a foolish 
 
 xterm supports all the usual stuff - unicode extensions, colors, ability to theme it the way you want. The best thing was the ability to go full screen - even on Gnome and you could remove the menu bar completely - something that I almost never use in any terminal emulator.
 
-[![](/images/posts/2012-02-05-xterm-thumbnail.png)](/images/posts/2012-02-05-xterm.png)
+<a href="/images/posts/2012-02-05-xterm.png" class="lightbox" ><img src="/images/posts/2012-02-05-xterm-thumbnail.png" alt=""></a>
 
 The screenshot shown above is xterm working in conjunction with [tmux][3]. tmux is a terminal multiplexer. Look at it like the replacement of [GNU-screen][4] with improvements over everything that makes you hate GNU-screen. After looking at various options, I settled on a slight modification of the theme that [Mike][5] uses on his machine.
 
